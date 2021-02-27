@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+ul {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 5vh; 
+}
+
+nav {
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 2vw;
+  font-size: small;
+}
+
+nav > * {
+  margin: 5px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav img {
+  height: 5vh;
+  width: 5vh;
+  background-color: #333;
+  border-radius: 50%; 
+}
+
+form{
+  width: 47.5vw;
+}
+
+.main-logo {
+  width: 100%;
+  padding: 0 20% 5vh;
+}
+/* Transition */
+div {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+.head {
+  background-image: "./assets/578-5780354_foto-profil-gambar-animasi-creator-clipart.png";
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+}
+
+.search-input input {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 50px;
+  border: 1px solid #dfe1e5;
+  font-size: 16px;
+}
+
+.search-input {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 25%;
+  opacity: 0.35;
+}
+
+.mic-icon {
+  right: 20px;
+}
+
+.search-icon {
+  left: 20px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.buttons button {
+  color: #3c4043;
+  background-color: #92afaf;
+  padding: 10px 15px;
+  border: none;
+  margin: 5vh 1vh 0;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+form p {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 5vh; 
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
